@@ -37,4 +37,5 @@ Remove-Item $outputFile
 9. Paste this link into batch code
 10. Run inv.vbs on other pc
 11. Done
+12. If you need help i can show you how to setup this **VIRUS** for **EDUCATION PURPOSES ONLY** so feel free to contact me on my discord.
 
