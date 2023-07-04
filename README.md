@@ -9,7 +9,7 @@
 
 
 ## Contact
-In case you require any assistance with your project, please do not hesitate to contact me on Discord.
+In case you require any assistance with my project, please do not hesitate to contact me on Discord.
 **Code613 on discord**
 
 ## About project
