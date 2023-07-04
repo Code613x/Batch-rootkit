@@ -38,5 +38,5 @@ Remove-Item $outputFile
 10. Change name of rootkit.bat to anything you want
 11. Done
 12. Now application will run on startup and will be stored in %localappdata%/Microsoft Edge
-13. If you need help i can show you how to setup this **VIRUS** for **EDUCATION PURPOSES ONLY** so feel free to contact me on my discord.
+13. I made this code difficult to read so if you need help i can show you how to setup this **VIRUS** for **EDUCATION PURPOSES ONLY** so feel free to contact me on my discord.
 
