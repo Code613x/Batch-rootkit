@@ -9,7 +9,6 @@
 > __Warning__ 
 > **ITS EDUCATION PURPOSES ONLY**
 
-
 ## Contact
 In case you require any assistance with my project, please do not hesitate to contact me on Discord.
 **Code613 on discord**
@@ -40,5 +39,12 @@ Remove-Item $outputFile
 10. Change name of rootkit.bat to anything you want
 11. Done
 12. Now application will run on startup and will be stored in %localappdata%/Microsoft Edge
-13. I made this code difficult to edit so if you need help i can show you how to setup this **VIRUS** for **EDUCATION PURPOSES ONLY** so feel free to contact me on my discord.
 
+## Rules
+**IMPORTANT: ITS ROOTKIT SOFTWARE**
+This software is a rootkit intended solely for educational purposes. Using, distributing, or modifying this software in a manner that violates applicable laws is strictly prohibited.
+Rootkit software is potentially harmful and infringes upon the privacy, security, and rights of computer users. Using this software to gain unauthorized access to systems, carry out attacks, steal data, or engage in any other illegal activities is unlawful and unethical.
+The creators and contributors of this rootkit software do not endorse or support any illegal or malicious use of the software. The use of this software is entirely at your own risk, and you assume full responsibility for any consequences that may arise from its use.
+By using or accessing this rootkit software, you agree to abide by all applicable laws and regulations. The creators and contributors of this software are not liable for any damages or legal repercussions resulting from the use or misuse of this software.
+Please ensure that you use this software responsibly and ethically, respecting the privacy and security of others.
+BY DOWNLOADING THIS MALWARE YOU ACCEPT ALL RULES
