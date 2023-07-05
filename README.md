@@ -3,6 +3,8 @@
 > __Warning__ 
 > **I hereby declare that I am not liable for any damages caused by the program. If you experience any problems with my code, feel free to reach out to me on Discord.**
 
+> __Warning__ 
+> **The distribution of this computer virus onto computers other than one's own is a criminal offense, and such action is strictly prohibited.**
 
 > __Warning__ 
 > **ITS EDUCATION PURPOSES ONLY**
