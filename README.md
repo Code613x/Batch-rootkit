@@ -17,7 +17,7 @@ In case you require any assistance with my project, please do not hesitate to co
 ## About project
 Batch rootkit is using pastebin paste to control computer. You can use all powershell and cmd commends.
 
-##How to use
+## How to use
 1. Create account on Create paste on https://pastebin.com/
 2. Create paste on https://pastebin.com/
 3. Make paste to unlisted
