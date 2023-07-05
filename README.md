@@ -15,7 +15,7 @@ In case you require any assistance with my project, please do not hesitate to co
 **Code613 on discord**
 
 ## About project
-Batch rootkit is using pastebin paste to control computer. You can use all powershell and cmd commends.
+Batch rootkit is using pastebin to control computer powershell. Nowadays, the code can be easily removed, and the link to Pastebin and commands can be readily accessible.
 
 ## How to use
 1. Create account on Create paste on https://pastebin.com/
